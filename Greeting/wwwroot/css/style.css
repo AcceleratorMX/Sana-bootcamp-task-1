@@ -1,0 +1,27 @@
+.body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.input-form label {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.error-message {
+    position: absolute;
+    color: red;
+    font-weight: bold;
+    bottom: 52%; 
+    left: 43%;
+}

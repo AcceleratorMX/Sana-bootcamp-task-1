@@ -1,0 +1,14 @@
+﻿@model Sana_bootcamp_task_1.Models.User
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+    <form asp-action="Greeting" class="input-form" method="post">
+        <label for="FullName">Enter your name:</label>
+        <input asp-for="FullName" type="text" id="FullName">
+        <span asp-validation-for="FullName" class="error-message"></span>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
