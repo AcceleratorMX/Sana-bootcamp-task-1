@@ -9,6 +9,6 @@ public class HomeController : Controller
     
     [HttpPost]
     public IActionResult Greeting(User user) => 
-        !ModelState.IsValid ? View("Index", user) : View(ViewData["GreetingMessage"] = $"Hello, {user.FullName}!");
+        !ModelState.IsValid ? View("./Index", user) : View(ViewData["GreetingMessage"] = $"Hello, {user.FullName}!");
 
 }
